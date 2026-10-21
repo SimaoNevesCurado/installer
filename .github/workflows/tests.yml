@@ -20,14 +20,14 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        php: [8.2, 8.3, 8.4, 8.5]
+        php: [8.2.35, 8.3.36, 8.4.27, 8.5.12]
         laravel: [10, 11, 12, '13']
         exclude:
-          - php: 8.5
+          - php: 8.5.12
             laravel: 11
-          - php: 8.5
+          - php: 8.5.12
             laravel: 10
-          - php: 8.4
+          - php: 8.4.27
             laravel: 10
           - laravel: '13'
             php: 8.2
@@ -67,10 +67,10 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        php: [8.2, 8.3, 8.4]
+        php: [8.2.35, 8.3.36, 8.4.27]
         laravel: [10, 11, '12', '13']
         exclude:
-          - php: 8.4
+          - php: 8.4.27
             laravel: 10
           - laravel: '13'
             php: 8.2
